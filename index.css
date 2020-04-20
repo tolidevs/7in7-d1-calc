@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f53890;
+    height: auto;
+    text-align: center;
+}
+
+button {
+    background-color: rgba(245, 56, 144, 0.4);
+    color: #57062c;
+    font-size: 20px;
+    min-height: 30px;
+    width: auto;
+    margin: 5px;
+    border-color: #57062c;
+    border-radius: 5px;
+}
+
+.result {
+    padding-top: 5px;
+    grid-area: result;
+    justify-self: center;
+    align-self: center;
+}
+
+
+.equals {
+    grid-area: equals;
+    justify-self: stretch;
+}
+
+.clear {
+    grid-area: clear;
+    justify-self: stretch;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculator {
+    width: 70vw;
+    height: 70vh;
+}
+
+#calcParts {
+    outline-style: solid;
+    outline-color: #f53890;
+    outline-width: 5px;
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "result result result result result"
+        "number number number number number"
+        "number number number number number"
+        "functional functional functional functional equals"
+        ". clear clear clear ."
+        ;
+}
+
